@@ -1,0 +1,92 @@
+---
+title: "IU_Proyect"
+format: pdf
+editor: visual
+---
+
+```{r}
+library(stringr)
+library(tidyverse)
+```
+
+```{r}
+song_data <- read.csv("./Kaggle Dataset/song_data.csv", comment.char="#")
+str(song_data)
+```
+
+## Limpieza Data Set
+
+Para la primera parte procedemos a la limpieza de filas y columnas del data set que no vamos a requerir.
+
+```{r}
+
+indices <- lapply(song_data,function(x) which(str_detect(x,"�")));indices
+
+```
+
+Como podemos observar en el data set encontramos caracteres inválidos que debemos de tratar para procesar correctamente los datos en nuestra aplicación.
+
+Para ello verificamos la codificación del archivo.
+
+```{r}
+guess_encoding <- readr::guess_encoding("./Kaggle Dataset/song_data.csv")
+print(guess_encoding)
+
+```
+
+```{r}
+datos <- read.csv("./Kaggle Dataset/song_data.csv", fileEncoding = "windows-1252", stringsAsFactors = FALSE)
+
+```
+
+Verificamos de nuevo los valores inválidos.
+
+```{r}
+
+indices <- lapply(,function(x) which(str_detect(x,"�")));indices
+
+```
+
+### Tratamiento de caracteres
+
+Observamos los caracteres.
+
+```{r}
+unique(datos$final_draw_position)
+unique(datos$favourite_10)
+```
+
+```{r}
+datos$final_draw_position <- ifelse(datos$final_draw_position == "", "-", datos$final_draw_position)
+
+```
+
+### Eliminar Columnas innecesarias
+
+```{r}
+datos_final <- datos |>
+  select(year, semi_final, semi_draw_position, final_draw_position, country, artist_name, song_name, language, style, gender, main_singers, final_televote_points, final_jury_points, final_televote_votes, final_jury_votes, final_place)
+```
+
+## Escirbimos en un csv
+
+```{r}
+write.csv(datos_final,file = "canciones.csv")
+```
+
+## Transformación a JSON
+
+```{r}
+library(jsonlite)
+```
+
+```{r}
+json_data <- toJSON(datos_final,pretty = TRUE)
+
+write(json_data, file = "canciones.json")
+
+```
+
+```{r}
+mejorcanciondelahistoria <- datos_final[which(datos_final$song_name == "Unicorn")];mejorcanciondelahistoria
+```

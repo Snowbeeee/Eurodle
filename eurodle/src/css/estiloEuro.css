@@ -1,0 +1,507 @@
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+:root {
+    --bg-dark: #121213;
+    --tile-bg: #5f7777;
+    --text: #ffffff;
+    --tile-hover: #2a2a2d;
+    --disabled: #3a3a3c;
+    --accent: #6aaa64;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-dark);
+}
+
+
+
+
+.eurodle-wrapper {
+    position: fixed; /* Fijo para que esté siempre sobre todo lo demás */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #E60026, #D0006F, #7B1FA2, #00B0F0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    padding: 2rem;
+    font-family: 'Roboto', serif;
+    color: #FFFFFF;
+}
+
+
+
+/*
+GUESS SONG
+*/
+.guess-song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-principal {
+    width: 100%;
+    margin-top: -20px;
+}
+
+/*guess form*/
+
+
+.sugerencias li {
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+}
+
+.sugerencias li:hover {
+    background-color: #f0f0f0;
+}
+
+/*feedback*/
+.feedback-display p{
+    color: #333;
+}
+
+.feedback-display h2{
+    color: #333;
+}
+
+/*cluedisplay*/
+.pistas-table th,p,td{
+    color: #333;
+}
+
+.pistas-table tr{
+    background: #cccccc;
+}
+
+/*extraclues*/
+.extra-clues h2{
+   color: #333;
+}
+
+/*ORDER SONG NAME*/
+
+.order-songs-game p{
+    color: #cccccc;
+}
+
+.tarjetas div{
+    color: #333;
+}
+
+.hueco-contenido{
+    color: #333;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*.eurodle-container {*/
+/*    background-color: rgba(0, 0, 0, 0.85);*/
+/*    border-radius: 16px;*/
+/*    padding: 2rem 1.5rem;*/
+/*    max-width: 400px;*/
+/*    width: 100%;*/
+/*    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.eurodle-wrapper {*/
+/*    min-height: 100vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background: var(--bg-dark);*/
+/*    color: var(--text);*/
+/*    padding: 2rem;*/
+/*}*/
+footer p{
+    color: #cccccc;
+}
+.eurodle-container {
+    background-color: var(--bg-dark);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 1px solid #3a3a3c;
+}
+
+
+.engranaje-home{
+    filter: invert(100%);
+    width: 30px;
+    height: auto;
+    padding: 2px;
+}
+
+.settings-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 1.5s ease;
+}
+
+.settings-btn:hover {
+    /*transform: scale(1.2);*/
+    transform: rotate(180deg);
+}
+
+
+
+.back-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 1.5s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.2);
+}
+
+.eurodle-header-home {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.eurodle-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.eurodle-subtitle {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 0.5rem;
+}
+
+.eurodle-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.eurodle-menu h2{
+    text-align: center;
+}
+
+/*.eurodle-btn {*/
+/*    background-color: #1a1a1a;*/
+/*    color: var(--text);*/
+/*    border: 2px solid #3a3a3c;*/
+/*    padding: 1rem;*/
+/*    font-size: 1rem;*/
+/*    border-radius: 8px;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.2s ease, transform 0.2s ease;*/
+/*    width: 100%;*/
+/*}*/
+
+.disabled-eurodle-btn{
+    background: linear-gradient(135deg,
+    rgba(67, 0, 11, 0.7),
+    rgba(97, 0, 50, 0.7),
+    rgba(72, 18, 92, 0.7),
+    rgba(0, 90, 122, 0.7)
+    ) 0 0;
+    background-size: 200%, 200%;
+    color: var(--text);
+    /*border: 2px solid #3a3a3c;*/
+    border: none;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out, transform 0.2s ease;
+    width: 100%;
+
+}
+
+.eurodle-btn{
+    background: linear-gradient(135deg,
+    rgba(230, 0, 38, 0.7),
+    rgba(208, 0, 111, 0.7),
+    rgba(123, 31, 162, 0.7),
+    rgba(0, 176, 240, 0.7)
+    ) 0 0;
+    background-size: 200%, 200%;
+    color: var(--text);
+    /*border: 2px solid #3a3a3c;*/
+    border: none;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out, transform 0.2s ease;
+    width: 100%;
+
+}
+.eurodle-btn:hover {
+    background-size: 100%, 100%;
+    background-position: right bottom;
+    transform: scale(1.02);
+}
+
+.eurodle-setting{
+        background-color: #1a1a1a;
+        color: var(--text);
+        border: 2px solid #3a3a3c;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+        width: 100%;
+}
+
+.eurodle-setting:hover {
+    background-color: var(--tile-hover);
+    transform: scale(1.02);
+}
+
+.eurodle-setting.disabled {
+    background-color: var(--disabled);
+    color: #777;
+    cursor: not-allowed;
+}
+
+.eurodle-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.small-text {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.eurodle-footer a{
+    color: #797c88;
+}
+
+.eurodle-heart-logo{
+    width: 70px;
+    height: auto;
+    filter: invert(100%);
+}
+
+.eurodle-header-home h1 {
+    transition: transform 0.3s ease; /* <--- transición suave */
+}
+
+.eurodle-header-home h1:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Usa transform, no scale directamente */
+}
+
+.eurodle-title-logo {
+    width: 130px;
+    height: auto;
+    padding-left: 15px;
+    filter: invert(100%);
+}
+
+.eurodle-header-home img{
+    filter: invert(100%);
+}
+.header-head{
+    background: linear-gradient(135deg, #E60026, #D0006F, #7B1FA2, #00B0F0);
+    margin: 0px;
+}
+
+.eurodle-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* evita que sobresalga el logo al hacer hover */
+}
+
+.header-spacer {
+    height: 80px; /* Ajusta al alto real del header-abs */
+    width: 100%;
+}
+
+.header-head {
+    position: fixed; /* o absolute si ya está dentro de un contenedor relativo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+.engranaje,.back{
+    width: 40px;
+    height: auto; /* mantiene la proporción */
+    filter: invert(100%);
+}
+
+
+.eurodle-header-text{
+    z-index: 999;
+    transition: transform 0.2s ease;
+}
+
+.eurodle-header-text:hover{
+    transform: scale(1.2);
+}
+
+.back-icon {
+    position: absolute;
+    top: 15px;
+}
+
+.settings-icon {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+}
+
+.heart-text {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+
+
+/*@media (max-width: 768px) {*/
+/*    .eurodle-heart-logo{*/
+/*        width: 50px;*/
+/*        height: auto;*/
+/*        filter: invert(100%);*/
+/*    }*/
+
+/*    .eurodle-title-logo {*/
+/*        width: 110px;*/
+/*        height: auto;*/
+/*        padding-left: 15px;*/
+/*        filter: invert(100%);*/
+/*    }*/
+
+/*    .engranaje{*/
+/*        width: 30px;*/
+/*        height: auto; !* mantiene la proporción *!*/
+/*        filter: invert(100%);*/
+/*    }*/
+
+/*    .back{*/
+/*        width: 40px;*/
+/*        height: auto; !* mantiene la proporción *!*/
+/*        filter: invert(100%);*/
+/*    }*/
+
+/*    .settings-icon{*/
+/*        position: absolute;*/
+/*        top: 10px;*/
+/*        right: 1px;*/
+/*    }*/
+
+/*    .back-icon {*/
+/*        position: absolute;*/
+/*        top: 5px;*/
+/*    }*/
+
+/*}*/
+
+/* Estilos generales para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+        .eurodle-heart-logo{
+            width: 50px;
+            height: auto;
+            filter: invert(100%);
+        }
+
+        .eurodle-title-logo {
+            width: 110px;
+            height: auto;
+            padding-left: 15px;
+            filter: invert(100%);
+        }
+
+        .engranaje{
+            width: 30px;
+            height: auto; /* mantiene la proporción */
+            filter: invert(100%);
+        }
+
+        .back{
+            width: 40px;
+            height: auto; /* mantiene la proporción */
+            filter: invert(100%);
+        }
+
+        .settings-icon{
+            position: absolute;
+            top: 10px;
+            right: 1px;
+        }
+
+        .back-icon {
+            position: absolute;
+            top: 5px;
+        }
+}
+
+/* Ajuste específico para modo paisaje en móviles */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .header-spacer{
+        height: 50px;
+    }
+
+    .eurodle-title-logo {
+        height: 40px;
+    }
+
+    .eurodle-heart-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .settings-btn img,
+    .back-btn img {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: -8px;
+        right: 5px;
+    }
+
+    .back-btn img{
+        left: 10px;
+    }
+}
+
+

@@ -1,0 +1,29 @@
+{
+  "tries": "intentos",
+  "about": "Sobre nosotros",
+  "terms": "Términos de Uso",
+  "privacy": "Privacidad y Cookies",
+  "app": {
+    "title": "Eurodle",
+    "subtitle": "Inspirado en Eurovisión",
+    "footer": "© 2025 Eurodle. Unidos por la música."
+  },
+  "menu": {
+    "guessSong": "Adivina la Canción",
+    "orderSongs": "Ordena las Canciones",
+    "guessCountry": "País del Cantante",
+    "settings": "Configuración",
+    "help": "Ayuda"
+  },
+  "settings": {
+    "buttonLabel": "Opciones"
+  },
+  "other": {
+    "loading": "Cargando...",
+    "errorLoading": "Error al cargar datos.",
+    "errorNotEnoughSongsForYear": "No hay suficientes canciones para este año en la base de datos"
+  },
+  "buttons": {
+    "home": "Volver a inicio"
+  }
+}

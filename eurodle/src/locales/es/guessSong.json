@@ -1,0 +1,104 @@
+{
+  "feedback": {
+    "title": "Fallos",
+    "noErrors": "No hay fallos aún.",
+    "attemptsLeft": "Has fallado, sigue intentándolo. Te quedan {{count}} intento",
+    "attemptsLeft_plural": "Has fallado, sigue intentándolo. Te quedan {{count}} intentos",
+    "congrats": "¡Enhorabuena! Has acertado la canción.",
+    "gameOver": "Te has quedado sin intentos. 😢 La canción era: {{songName}}",
+    "tries": "intentos",
+    "congrats2": "¡Enhorabuena!",
+    "gameOver2": "Te has quedado sin intentos"
+  },
+  "clues": {
+    "title": "Pistas",
+    "title-movil": "<--Desliza para ver más --> (Estoy en el JSON) (ESTO SOLO VA EN MOVIL)",
+    "noClues": "Sin pistas todavía.",
+    "headers": {
+      "song": "Canción",
+      "artist": "Cantante",
+      "country": "País",
+      "year": "Año",
+      "rank": "Ranking"
+    },
+    "comparison": {
+      "yearHigher": "🔼 Busca más reciente",
+      "yearLower": "🔽 Busca más antiguo",
+      "rankHigher": "🔼 Ranking más alto",
+      "rankLower": "🔽 Ranking más bajo"
+    }
+  },
+  "extraClues": {
+    "title": "Pistas adicionales",
+    "locked": "🔒 Pista {{index}}",
+    "unlockedPrefix": "🔓 ",
+    "videoCompleted": "Pista de video completada ✓",
+    "clueTemplates": {
+      "rank": "Ranking final: puesto número {{rank}}",
+      "neighbours": "La canción quedó {{above}}{{separator}}{{below}}",
+      "neighboursParts": {
+        "above": "por debajo de {{country}}",
+        "below": "por encima de {{country}}",
+        "separator": " y ",
+        "unknown": "Desconocido"
+      },
+      "langStyle": "Idioma: {{language}}  ||  Género: {{style}}",
+      "letters": "Primera y ultima letra del nombre de la canción: {{firstLetter}}...{{lastLetter}}",
+      "lyrics": "Fragmento de la letra: {{fragment}}",
+      "artist": "Artista(s)/grupo: {{artistName}}"
+    }
+  },
+  "form": {
+    "notFound": "Canción no encontrada o no llegó a la final",
+    "correctGuess": "¡Correcto! Has adivinado la canción 🎉",
+    "lostSub": "¡Oh no! Te has quedado sin intentos",
+    "lost": "Has perdido",
+    "placeholderSong": "Introduce el título de una canción...",
+    "placeholderYear": "Introduce el año...",
+    "placeholderCountry": "Introduce el país...",
+    "alreadyGuessedSong": "Ya has intentado con esa, ¡prueba otra diferente!",
+    "alreadyGuessedYearCountry": "Ya has intentado con esa combinación de país y año, ¡prueba otra diferente!",
+    "submitButton": "Adivinar",
+    "guessMethodTitle": "Título",
+    "guessMethodYearCountry": "Año y País",
+    "clues": "Más pistas",
+    "errorEmptyInputSong": "Por favor, ingresa el título de la canción.",
+    "errorEmptyInputCountry": "Por favor, ingresa detalles del país y año.",
+    "labelYear": "Año",
+    "labelCountry": "País",
+    "labelTitle": "Título",
+    "labelSwitch": "Alternar",
+    "changeMode": "Cambiar modo de juego",
+    "newClues": "¡Tienes pistas nuevas!",
+    "rangeLimit": "El valor del año no se encuentra en el rango seleccionado"
+  },
+  "game": {
+    "restart": "Reiniciar Juego",
+    "showAll": "Mostrar todas las pistas 💡",
+    "guessBy" : "Adivina la cancion por... ",
+    "guessByTitle" : "el título",
+    "guessByYearCountry" : "el país y el año",
+    "info": "Información:",
+    "mode": "Adivina la Canción",
+    "modes": "Modos de Juego:",
+    "mode1": "Modo Clásico",
+    "mode2": "Modo Hardcore 💀",
+    "mode3": "Rango de Tiempo",
+    "yearStart": "Año Inicio",
+    "yearEnd": "Año Fin",
+    "help" : "Ayuda"
+  },
+
+  "help_info": "El modo de juego principal de Eurodle tiene 3 sub-modos:\n\n 1. Modo clásico:\n\tLa experiencia por defecto de Eurodle, dispones de pistas adicionales y juegas en el rango del año 2009 hasta el año 2025. \n\n 2. El modo hardcore:\n\t No hay pistas extra, solo estás tú y tu conocimiento contra el mundo.\n\n3. Modo de rango de tiempo: \n\tSi no empezaste a consumir Eurovisión hasta cierto año o simplemente quieres una experiencia personalizada, este modo es para tí.\n\tDebes ingresar un rango de tiempo válido para poder jugar a este modo (desde 2009 hasta 2025)",
+
+  "noSongFound": "No se encontró ninguna canción con ese nombre",
+
+  "noCountryFound": "No se encontró ningún país con ese nombre",
+
+  "aria": {
+    "lives": "{{count}} vida restante",
+    "lives_plural": "{{count}} vidas restantes"
+  }
+
+
+}

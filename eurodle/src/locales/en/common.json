@@ -1,0 +1,29 @@
+{
+  "tries": "tries",
+  "about": "About us",
+  "terms": "Terms of Use",
+  "privacy": "Cookies & Privacy",
+  "app": {
+    "title": "Eurodle",
+    "subtitle": "Inspired by Eurovision",
+    "footer": "© 2025 Eurodle. United by music."
+  },
+  "menu": {
+    "guessSong": "Guess the Song",
+    "orderSongs": "Order the Songs",
+    "guessCountry": "Singer's Country",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "settings": {
+    "buttonLabel": "Settings"
+  },
+  "other": {
+    "loading": "Loading...",
+    "errorLoading": "Error loading data.",
+    "errorNotEnoughSongsForYear": "Not enough songs for this year in the database"
+  },
+  "buttons": {
+    "home": "Go home"
+  }
+}

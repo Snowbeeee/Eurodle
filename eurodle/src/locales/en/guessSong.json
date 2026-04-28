@@ -1,0 +1,103 @@
+{
+  "feedback": {
+    "title": "Errors",
+    "noErrors": "No errors yet.",
+    "attemptsLeft": "Incorrect, keep trying. You have {{count}} attempt left",
+    "attemptsLeft_plural": "Incorrect, keep trying. You have {{count}} attempts left",
+    "congrats": "Congratulations! You guessed the song.",
+    "gameOver": "You ran out of attempts. 😢 The song was: {{songName}}",
+    "tries": "tries",
+    "congrats2": "Congratulations!",
+    "gameOver2": "You ran out of attempts"
+  },
+  "clues": {
+    "title": "Clues",
+    "title-movil": "<--Scroll to see more --> (Estoy en el JSON) (ESTO SOLO VA EN MOVIL)",
+    "noClues": "No clues yet.",
+    "headers": {
+      "song": "Song",
+      "artist": "Artist",
+      "country": "Country",
+      "year": "Year",
+      "rank": "Ranking"
+    },
+    "comparison": {
+      "yearHigher": "🔼 Look for newer",
+      "yearLower": "🔽 Look for older",
+      "rankHigher": "🔼 Higher ranking",
+      "rankLower": "🔽 Lower ranking"
+    }
+  },
+  "extraClues": {
+    "title": "Additional Clues",
+    "locked": "🔒 Clue {{index}}",
+    "unlockedPrefix": "🔓 ",
+    "videoCompleted": "Video clue completed ✓",
+    "clueTemplates": {
+      "rank": "Final ranking: position number {{rank}}",
+      "neighbours": "The song ranked {{above}}{{separator}}{{below}}",
+      "neighboursParts": {
+        "above": "before {{country}}",
+        "below": "after {{country}}",
+        "separator": " and ",
+        "unknown": "Unknown"
+      },
+      "langStyle": "Language: {{language}}  ||  Genre: {{style}}",
+      "letters": "First and last letter of the song name: {{firstLetter}}...{{lastLetter}}",
+      "lyrics": "Lyric snippet: {{fragment}}",
+      "artist": "Artist(s)/group: {{artistName}}"
+    }
+  },
+  "form": {
+    "notFound": "Song not found or did not reach the final",
+    "correctGuess": "Correct! You guessed the song 🎉",
+    "lostSub": "Damn it! You ran out of tries",
+    "lost": "You lost",
+    "placeholderSong": "Type a song title...",
+    "placeholderYear": "Enter the year...",
+    "placeholderCountry": "Enter the country...",
+    "alreadyGuessedSong": "You've already tried that one, try a different one!",
+    "alreadyGuessedYearCountry": "You've already tried that country and year combination, try a different one!",
+    "submitButton": "Guess",
+    "guessMethodTitle": "Title",
+    "guessMethodYearCountry": "Year and Country",
+    "clues": "Show more clues",
+    "errorEmptyInputSong": "Please, type song title.",
+    "errorEmptyInputCountry": "Please, specify details about song's year or country.",
+    "labelYear": "Year",
+    "labelCountry": "Country",
+    "labelTitle": "Title",
+    "labelSwitch": "Switch",
+    "changeMode": "Change game mode",
+    "newClues": "You have new clues!",
+    "rangeLimit": "You have exceeded the chosen range"
+  },
+  "game": {
+    "restart": "Restart Game",
+    "showAll": "Show all clues 💡",
+    "guessBy" : "Guess the song by its... ",
+    "guessByTitle" : "title",
+    "guessByYearCountry" : "year and country",
+    "info": "Information:",
+    "mode": "Guess the Song",
+    "modes": "Game Modes:",
+    "mode1": "Classic mode",
+    "mode2": "Hardcore mode 💀",
+    "mode3": "Year Range",
+    "yearStart": "Start Year",
+    "yearEnd": "End Year",
+    "help" : "Help"
+  },
+
+  "help_info": "Eurodle´s main game has 3 different Modes\n\n 1. Classic mode:\n\t The standard Eurodle experience, you have extra clues and songs from 2009 to 2025. \n\n 2. The hardcore mode:\n\t No extra clues, just you and your knowledge versus the world.\n\n3. Year range mode: \n\tIf you were not into Eurovision for some time or you just want a custom experience, this is your game mode.\n\tYou must enter a valid range to be able to play this game mode (between 2009 and 2025)",
+
+
+  "noSongFound": "No song found with that name",
+
+  "noCountryFound": "No country found with that name",
+
+  "aria": {
+    "lives": "{{count}} live remaining",
+    "lives_plural": "{{count}} lives remaining"
+  }
+}

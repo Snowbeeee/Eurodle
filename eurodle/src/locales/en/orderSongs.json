@@ -1,0 +1,32 @@
+{
+  "title": "Order the Songs",
+  "selectedYear": "Selected year: <strong>{{year}}</strong>",
+  "instructions": "Drag the songs to the slots in the correct order.",
+  "livesLeft": "Lives remaining: <strong>{{count}}</strong>",
+  "yearLabel": "Year",
+  "livesLabel": "Lives",
+  "allClear": "All the songs are placed in the gaps",
+  "avaliableCards": "Avaliable songs:",
+  "emptyCard": "Empty",
+  "feedback": {
+    "correct": "✔️",
+    "incorrect": "❌"
+  },
+  "results": {
+    "winTitle": "Congratulations!",
+    "loseTitle": "Oh, no!"
+  },
+  "messages": {
+    "win": "You ordered the songs correctly 🎉",
+    "loseBase": "You lost",
+    "lose": "The correct order was: {{correctOrder}}"
+  },
+  "buttons": {
+    "check": "Check",
+    "restart": "Restart"
+  },
+  "slots": {
+    "position": "Position {{position}}",
+    "placeholder": "Drag here"
+  }
+}

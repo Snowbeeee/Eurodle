@@ -1,0 +1,19 @@
+{
+  "game": {
+    "title": "Adivina el país del cantante",
+    "arr": "País seleccionado:",
+    "hovered": "Selected country:",
+    "clicked": "Has hecho click en: {{countryId}}",
+    "hint": "Pista Dirección {{arrow}}",
+    "correct": "¡Correcto! Has adivinado el país.",
+    "notFoundWarning": "Países no encontrados",
+    "refresh": "Reiniciar Juego",
+    "rotateTitle": "Gira la pantalla",
+    "rotateMessage": "Por favor gira tu dispositivo en modo horizontal para jugar.",
+    "informationMap": "(Amplia y Selecciona un País)"
+  },
+  "feedback": {
+    "congrats": "¡Enhorabuena! Has acertado el país.",
+    "gameOver": "Te has quedado sin intentos. 😢 El país era: {{country}}"
+  }
+}

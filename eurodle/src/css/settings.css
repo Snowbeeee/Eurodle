@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.settings-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    z-index: 500;
+    overflow-y: auto;
+    padding: calc(5% + 70px) 30% 5%;
+    box-sizing: border-box;
+
+
+}
+
+.settings-panel h1 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    text-align: center;
+    align-content: center;
+}
+
+.settings-item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.settings-item label {
+    font-weight: 500;
+}
+
+input[type="range"] {
+    width: 100%;
+    background: linear-gradient(135deg, #E60026, #D0006F, #7B1FA2, #00B0F0);
+}
+
+input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(135deg, #E60026, #D0006F, #7B1FA2, #00B0F0);
+    margin-right: 8px;
+}
+
+
+
+
+
+select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #1e1e1e;
+    color: #ffffff;
+
+}
+
+.settings-btn-return-home {
+    background: linear-gradient(135deg, #E60026, #D0006F, #7B1FA2, #00B0F0);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.settings-btn-return-home:hover {
+    background-color: var(--tile-hover);
+    transform: scale(1.02);
+}
+    
+
+@media (max-width: 800px) {
+    .settings-panel {
+        padding: calc(5% + 70px) 10% 5%;
+        height: 100%;
+    }
+
+    .settings-panel h1{
+        font-size: 7vw;
+    }
+
+    .settings-item {
+        margin-bottom: 30px;
+        gap: 2vw;
+    }
+
+    .settings-item label{
+        font-size: 4vw;
+    }
+
+    select{
+        font-size: 3.5vw;
+
+    }
+
+    .settings-btn-return-home{
+        font-size: 4vw;
+
+    }
+
+}
+
+
