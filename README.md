@@ -57,8 +57,7 @@ We deployed a live demo on Netlify.
 
 ### **Prerrequisitos**
 
-* Tener instalados [Node.js](https://nodejs.org/en/download) y **npm**.
-* Un IDE como **IntelliJ IDEA** o **Visual Studio Code** para abrir el proyecto y ejecutar comandos.
+* Tener instalado [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
 ---
 
@@ -70,31 +69,17 @@ git clone <URL-del-repositorio>
 
 ---
 
-### 📁 **Paso 2:** Abrir el proyecto
+### 🐳 **Paso 2:** Construir y arrancar el contenedor
 
-Abrirlo en tu IDE favorito, en la carpeta raíz (donde están las carpetas `src` y `public`).
-
----
-
-### 📦 **Paso 3:** Instalar dependencias
-
-Antes de ejecutar la app, instalar las dependencias:
+Desde la carpeta raíz del proyecto:
 
 ```bash
-npm install
+docker compose up --build
 ```
 
 ---
 
-### 🖥️ **Paso 4:** Ejecutar servidor de desarrollo
-
-```bash
-npm start
-```
-
----
-
-### 🌐 **Paso 5:** Probar en el navegador
+### 🌐 **Paso 3:** Probar en el navegador
 
 Abrir:
 
@@ -104,9 +89,11 @@ http://localhost:3000/
 
 ---
 
-⚠️ **Nota:**
-`npm start` arranca un servidor de desarrollo. No es una versión final.
-Por eso, también hemos subido una versión estable a Netlify (enlace arriba).
+Para detener el contenedor:
+
+```bash
+docker compose down
+```
 
 ---
 
@@ -114,8 +101,7 @@ Por eso, también hemos subido una versión estable a Netlify (enlace arriba).
 
 ### **Prerequisites**
 
-* Install [Node.js](https://nodejs.org/en/download) and **npm**.
-* Use an IDE like **IntelliJ IDEA** or **Visual Studio Code**.
+* Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
 ---
 
@@ -127,31 +113,17 @@ git clone <repository-URL>
 
 ---
 
-### 📁 **Step 2:** Open the project
+### 🐳 **Step 2:** Build and start the container
 
-Open it in your preferred IDE, at the root folder (`src`, `public`, etc.).
-
----
-
-### 📦 **Step 3:** Install dependencies
-
-Before running the app:
+From the project root folder:
 
 ```bash
-npm install
+docker compose up --build
 ```
 
 ---
 
-### 🖥️ **Step 4:** Run the development server
-
-```bash
-npm start
-```
-
----
-
-### 🌐 **Step 5:** Open in your browser
+### 🌐 **Step 3:** Open in your browser
 
 Go to:
 
@@ -161,6 +133,8 @@ http://localhost:3000/
 
 ---
 
-⚠️ **Note:**
-`npm start` runs a development server — it’s not a production build.
-That’s why we also deployed a stable version on Netlify (link above).
+To stop the container:
+
+```bash
+docker compose down
+```
